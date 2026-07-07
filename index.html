@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarWeb | Healthy Together</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Login Section -->
+    <section class="login-section" id="loginSection">
+        <div class="login-card">
+            <h1>🌙 Welcome</h1>
+            <p>Sign in to explore our Ramadan guide.</p>
+
+            <form id="loginForm">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required>
+
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="content" class="hidden">
+
+        <header>
+            <h1>Ramadan: The Holiest Month in Islam</h1>
+            <p>Discover the meaning, values, and spiritual significance of Ramadan.</p>
+        </header>
+
+        <section class="card">
+
+            <h2>About Ramadan</h2>
+
+            <p>
+                Ramadan is the ninth month of the Islamic (Hijri) calendar and is considered one of the holiest months for Muslims around the world. During this sacred month, Muslims fast from dawn until sunset while dedicating more time to worship, prayer, reading the Holy Quran, and performing acts of charity.
+            </p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Key Aspects of Ramadan</h2>
+
+            <div class="item">
+                <h3>🌙 Fasting (Sawm)</h3>
+                <p>
+                    Muslims abstain from food, drink, and negative behavior from dawn until sunset as an act of worship and self-discipline.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>🤲 Blessings and Forgiveness</h3>
+                <p>
+                    Ramadan is a month filled with mercy, blessings, and forgiveness. Good deeds are believed to receive multiplied rewards.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>📖 Revelation of the Quran</h3>
+                <p>
+                    Ramadan commemorates the revelation of the Holy Quran to Prophet Muhammad (peace be upon him).
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>⭐ Laylat al-Qadr</h3>
+                <p>
+                    A night better than a thousand months, found during the last ten nights of Ramadan.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>❤️ Family & Community</h3>
+                <p>
+                    Ramadan strengthens family relationships through Suhoor, Iftar, charity, and helping those in need.
+                </p>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>© 2026 FarWeb • Created by Faris</p>
+        </footer>
+
+    </main>
+
+    <script>
+        const form = document.getElementById("loginForm");
+        const login = document.getElementById("loginSection");
+        const content = document.getElementById("content");
+
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+
+            login.style.display = "none";
+            content.classList.remove("hidden");
+
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            });
+        });
+    </script>
+
+</body>
+</html>
